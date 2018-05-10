@@ -6,7 +6,7 @@ file=open("engmix.txt")
 
 lengthlist=[]
 for line in file:
-    lengthlist.append(len(line))
+    lengthlist.append(len(line.strip()))
 num=1
 while num<=22:
     print("There are",lengthlist.count(num),num,"letter words")
