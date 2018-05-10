@@ -8,6 +8,6 @@ lengthlist=[]
 for line in file:
     lengthlist.append(len(line.strip()))
 num=1
-while num<=22:
+while num<=21:
     print("There are",lengthlist.count(num),num,"letter words")
     num+=1
