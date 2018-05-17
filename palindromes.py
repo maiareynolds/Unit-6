@@ -5,10 +5,9 @@
 file=open("engmix.txt")
 
 for line in file:
-    line.strip()
+    line=line.strip()
     reverse=""
     for ch in line:
         reverse=ch+reverse
-    reverse.reverse()
     if reverse==line:
         print(line)
