@@ -6,19 +6,11 @@ file=open("engmix.txt")
 
 alphabet="abcdefghijklmnopqrstuvwxyz"
 
+short=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
+longest=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
 
-for letter in alphabet:
-    dictionary=[]
-    for line in file:
-        line.split()
-        if line[0]==letter:
-            dictionary.append(line)
-            maxi=""
-            for line in dictionary:
-                if len(line)>=len(maxi):
-                    maxi=line
-            print(maxi)
-            for line in dictionary:
-                if len(line)<=len(maxi):
-                    maxi=line
-            print(maxi)
+maxi=""
+for line in file:
+    line.split()
+    if len(line)>=len(maxi):
+        longest[alphabet.index(line[0])]=line
