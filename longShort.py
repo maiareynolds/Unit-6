@@ -14,3 +14,4 @@ for line in file:
     line.split()
     if len(line)>=len(maxi):
         longest[alphabet.index(line[0])]=line
+print(longest)
