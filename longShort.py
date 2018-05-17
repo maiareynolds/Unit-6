@@ -11,9 +11,9 @@ for letter in alphabet:
     dictionary=[]
     for line in file:
         line.split()
-        if line[0]=letter:
+        if line[0]==letter:
             dictionary.append(line)
-            maxi=0
+            maxi=""
             for line in dictionary:
                 if len(line)>=len(maxi):
                     maxi=line
