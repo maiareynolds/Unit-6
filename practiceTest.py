@@ -3,7 +3,7 @@
 #practiceTest.py - test
 
 file=open("engmix.txt")
-"""
+
 for line in file:#words with 3 cs and 2 ps
     if line.count("c")==3 and line.count("p")==2:
         print(line)
@@ -29,8 +29,8 @@ for line in file:
     if len(line)>=1 and letter not in line:
         times+=1
 print(times,"words do not have the letter",letter,"in them")
-"""
-dictionary=[]
+
+dictionary=[]#prints middle word
 for line in file:
     line.split()
     if len(line)>=1:
