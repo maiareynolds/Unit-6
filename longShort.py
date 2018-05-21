@@ -11,6 +11,7 @@ longest=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r"
 
 for line in file:
     line.split()
-    if len(line)>=1 and len(line)>=len(longest[alphabet.index(line[0])]):
-        longest[alphabet.index(line[0])]=line
+    letter=alphabet.index(line[0])
+    if len(line)>=len(longest[letter]):
+        longest[letter]=line
 print(longest)
