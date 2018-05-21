@@ -18,7 +18,7 @@ for line in file:
     if len(line)>=9 and line[0]==line[4] and line[0]==line[8]:
         words.append(line)
 print(words[0])
-"""
+
 #3 - enter number and letter, print all words from dictionary file that begin with letter and are the number's length
 number=int(input("Enter a number: "))
 letter=input("Enter a letter: ")
@@ -26,3 +26,11 @@ for line in file:
     line.split()
     if len(line)==number+1 and line[0]==letter:
         print(line)
+"""
+#4 - finds 8000th word in dictionary file with more than 10 letters
+longwords=[]
+for line in file:#adds words with ten or more letters to longwords list
+    line.strip()
+    if len(line)>=10:
+        longwords.append(line)
+print(longwords[7999])
