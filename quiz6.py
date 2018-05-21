@@ -24,5 +24,5 @@ number=int(input("Enter a number: "))
 letter=input("Enter a letter: ")
 for line in file:
     line.split()
-    if len(line)==number and line[0]==letter:
+    if len(line)==number+1 and line[0]==letter:
         print(line)
